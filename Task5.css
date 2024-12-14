@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.6) 0%, rgba(135, 206, 235, 0.8) 50%, rgba(0, 0, 139, 0.8) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+    background-attachment: fixed;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 450px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #154360;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Increase width of the input field */
+#cityName {
+    width: 100%; /* Takes full width of the container */
+    max-width: 400px; /* Max width for the city name input */
+    padding: 12px;
+    font-size: 1.1em;
+    margin-bottom: 20px; /* Maintain space below the input */
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Styling for the buttons container to ensure spacing */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Styling for buttons */
+button {
+    padding: 12px 15px;
+    font-size: 1.1em;
+    cursor: pointer;
+    background-color: #34495e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    width: 45%; /* Ensures buttons take 45% width of the container */
+}
+
+button:hover {
+    background-color: #5dade2;
+}
+
+/* Add spacing between textareas */
+textarea {
+    margin-top: 20px;
+    width: 100%; /* Full width */
+    max-width: 400px; /* Max width of textareas */
+    padding: 12px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    resize: none; /* Prevent resizing of textareas */
+}
+
+/* Weather info text area */
+#weatherInfo {
+    height: 150px;
+    font-family: Arial, sans-serif;
+}
+
+/* Adjust background gradients for weather conditions */
+.sunny {
+    background: linear-gradient(135deg, #ffeb3b, #ff9800);
+}
+
+.cloudy {
+    background: linear-gradient(135deg, #b0bec5, #607d8b);
+}
+
+.rainy {
+    background: linear-gradient(135deg, #00bcd4, #00796b);
+}
+
+.stormy {
+    background: linear-gradient(135deg, #424242, #212121);
+}
+
+.clear {
+    background: linear-gradient(135deg, #87cefa, #00bfff);
+}

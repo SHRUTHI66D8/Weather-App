@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Reporting App</title>
+    <link rel="stylesheet" href="Task5.css">
+</head>
+<body>
+    <div class="container">
+        <h1>WEATHER REPORTING APP</h1>
+        
+        <!-- Input container for city name -->
+        <div class="input-container">
+            <input type="text" id="cityName" placeholder="Enter city name">
+        </div>
+        
+        <!-- Buttons container with spacing between them -->
+        <div class="button-container">
+            <button onclick="getWeatherByInput()">Get Weather</button>
+            <button onclick="getWeatherByGeolocation()">Use My Current Location</button>
+        </div>
+        
+        <!-- Textarea for displaying weather info for the requested city -->
+        <textarea id="weatherInfo" rows="4" cols="50" placeholder="Weather info for your requested city will appear here..." readonly></textarea>
+    </div>
+
+    <script src="Task5.js"></script>
+</body>
+</html>
